@@ -1,5 +1,7 @@
 <script>
   import { MetaTags } from 'svelte-meta-tags'
+  import Fa from 'svelte-fa'
+  import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
   const metaProps = {
     url: 'https://bbetts.dev',
     title: 'Brendan Betts',
@@ -31,7 +33,14 @@
       websites.
     </p>
   </div>
-  <div class="grid" />
+  <div class="flex place-content-center my-6 grid-cols-2 justify-center gap-6">
+    <a href="https://github.com/thoross" target="_blank" rel="noreferrer">
+      <Fa icon={faGithub} class="text-3xl" />
+    </a>
+    <a href="https://www.linkedin.com/in/bbetts9490/" target="_blank" rel="noreferrer">
+      <Fa icon={faLinkedin} class="text-3xl" />
+    </a>
+  </div>
 </div>
 
 <MetaTags
