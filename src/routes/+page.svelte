@@ -1,17 +1,48 @@
+<script>
+  import { MetaTags } from 'svelte-meta-tags'
+  const metaProps = {
+    url: 'https://bbetts.dev',
+    title: 'Brendan Betts',
+    description:
+      "Hi, I'm Brendan. I'm a Front End developer from Vancouver, BC building elegant code solutions and award winning websites.",
+    images: [
+      {
+        url: 'https://bbetts.dev/bbetts_6x6.jpg',
+        width: 432,
+        height: 432,
+        alt: 'Brendan Betts'
+      }
+    ]
+  }
+</script>
+
 <div class="h-full w-full grid place-content-center text-white">
-	<img
-		class="place-content-center rounded-full w-52 mx-auto"
-		src="$lib/bbetts_6x6.jpg"
-		alt="Brendan Betts"
-	/>
-	<div class="my-12">
-		<h1 class="text-6xl text-center ">Hi, I'm <span class="font-sigmar">Brendan</span></h1>
-	</div>
-	<div>
-		<p class="text-2xl">
-			I'm a Front End developer from Vancouver, BC building elegant code solutions and award winning
-			websites.
-		</p>
-	</div>
-	<div class="grid" />
+  <img
+    class="place-content-center rounded-full w-52 mx-auto"
+    src="$lib/bbetts_6x6.jpg"
+    alt="Brendan Betts"
+  />
+  <div class="my-12">
+    <h1 class="text-6xl text-center ">Hi, I'm <span class="font-sigmar">Brendan</span></h1>
+  </div>
+  <div>
+    <p class="text-2xl">
+      I'm a Front End developer from Vancouver, BC building elegant code solutions and award winning
+      websites.
+    </p>
+  </div>
+  <div class="grid" />
 </div>
+
+<MetaTags
+  title="Brendan Betts"
+  description="Hi, I'm Brendan. I'm a Front End developer from Vancouver, BC building elegant code solutions and award winning websites."
+  openGraph={metaProps}
+  twitter={{
+    cardType: 'summary_large_image',
+    title: metaProps.title,
+    image: metaProps.images[0].url,
+    imageAlt: metaProps.images[0].alt,
+    description: metaProps.description
+  }}
+/>
