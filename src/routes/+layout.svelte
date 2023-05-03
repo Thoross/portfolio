@@ -2,7 +2,7 @@
   import '../app.css'
 </script>
 
-<main class="h-screen w-full container px-6">
+<main class="min-h-screen w-full container px-6 my-7 md:h-screen md:my-0">
   <slot />
 </main>
 

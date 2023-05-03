@@ -30,7 +30,7 @@
   <div class="h-full w-full grid place-content-center text-white">
     <div in:fly={{ y: 100, duration: 500, easing: backIn }}>
       <img
-        class="place-content-center rounded-full w-52 mx-auto border-"
+        class="place-content-center rounded-full w-52 mx-auto drop-shadow-xl border-4 border-pink-100"
         src="$lib/bbetts_6x6.jpg"
         alt="Brendan Betts"
       />
