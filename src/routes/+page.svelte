@@ -2,6 +2,9 @@
   import { MetaTags } from 'svelte-meta-tags'
   import Fa from 'svelte-fa'
   import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+  import { fly, fade } from 'svelte/transition'
+  import { backIn } from 'svelte/easing'
+
   const metaProps = {
     url: 'https://bbetts.dev',
     title: 'Brendan Betts',
@@ -16,32 +19,49 @@
       }
     ]
   }
+
+  let animate = false
+  setInterval(() => {
+    animate = true
+  }, 500)
 </script>
 
-<div class="h-full w-full grid place-content-center text-white">
-  <img
-    class="place-content-center rounded-full w-52 mx-auto"
-    src="$lib/bbetts_6x6.jpg"
-    alt="Brendan Betts"
-  />
-  <div class="my-12">
-    <h1 class="text-6xl text-center ">Hi, I'm <span class="font-sigmar">Brendan</span></h1>
+{#if animate}
+  <div class="h-full w-full grid place-content-center text-white">
+    <div in:fly={{ y: 100, duration: 500, easing: backIn }}>
+      <img
+        class="place-content-center rounded-full w-52 mx-auto border-"
+        src="$lib/bbetts_6x6.jpg"
+        alt="Brendan Betts"
+      />
+    </div>
+    <div class="my-12" in:fade={{ duration: 200, delay: 300 }}>
+      <h1 class="text-6xl text-center">
+        Hi, I'm <span class="font-sigmar">Brendan</span>
+      </h1>
+    </div>
+    <div in:fade={{ duration: 400, delay: 300 }} class="text-center">
+      <p class="text-2xl mb-5">
+        I'm a Front End developer from Vancouver, BC building elegant code solutions and award
+        winning websites.
+      </p>
+      <p class="text-2xl">
+        I specialize in React, TypeScript, and modern CMSs like Contentful and Sanity.
+      </p>
+    </div>
+    <div
+      class="flex place-content-center my-6 grid-cols-2 justify-center gap-6"
+      in:fade={{ duration: 500, delay: 600 }}
+    >
+      <a href="https://github.com/thoross" target="_blank" rel="noreferrer">
+        <Fa icon={faGithub} class="text-3xl" />
+      </a>
+      <a href="https://www.linkedin.com/in/bbetts9490/" target="_blank" rel="noreferrer">
+        <Fa icon={faLinkedin} class="text-3xl" />
+      </a>
+    </div>
   </div>
-  <div>
-    <p class="text-2xl">
-      I'm a Front End developer from Vancouver, BC building elegant code solutions and award winning
-      websites.
-    </p>
-  </div>
-  <div class="flex place-content-center my-6 grid-cols-2 justify-center gap-6">
-    <a href="https://github.com/thoross" target="_blank" rel="noreferrer">
-      <Fa icon={faGithub} class="text-3xl" />
-    </a>
-    <a href="https://www.linkedin.com/in/bbetts9490/" target="_blank" rel="noreferrer">
-      <Fa icon={faLinkedin} class="text-3xl" />
-    </a>
-  </div>
-</div>
+{/if}
 
 <MetaTags
   title="Brendan Betts"
