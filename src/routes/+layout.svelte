@@ -19,8 +19,6 @@
 
 <slot />
 
-<MetaTags titleTemplate="Brendan Betts - %s" />
-
 <style lang="postcss">
   :global(html) {
     background: theme(colors.gray.100); /* fallback for old browsers */

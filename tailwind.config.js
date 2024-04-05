@@ -11,7 +11,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Ysabeau', 'sans-serif', ...defaultTheme.fontFamily.sans],
-        sigmar: ['Sigmar', 'cursive']
+        sigmar: ['Sigmar', 'cursive'],
+        raleway: ['raleway', 'sans-serif']
       },
       colors: {
         primary: 'rgba(var(--color-primary), <alpha-value>)',

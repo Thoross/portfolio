@@ -88,8 +88,7 @@
 </main>
 
 <MetaTags
-  title="Home"
-  titleTemplate="%s - Brendan Betts"
+  title="Home - Brendan Betts"
   description="Hi, I'm Brendan. I'm a Front End developer from Vancouver, BC building elegant code solutions and award winning websites."
   openGraph={metaProps}
   twitter={{
