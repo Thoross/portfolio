@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 29, 148, 253;
+    --color-secondary: 131, 58, 180;
+  }
+}
+
+
+@page {
+  margin: 5px 10px;
+}
+

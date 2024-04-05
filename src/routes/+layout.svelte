@@ -1,10 +1,25 @@
-<script>
+<script lang="ts">
   import '../app.css'
+  import { onNavigate } from '$app/navigation'
+  import { MetaTags } from 'svelte-meta-tags'
+
+  onNavigate((navigation) => {
+    //@ts-expect-error
+    if (!document.startViewTransition) return
+
+    return new Promise((resolve) => {
+      //@ts-expect-error
+      document.startViewTransition(async () => {
+        resolve()
+        await navigation.complete
+      })
+    })
+  })
 </script>
 
-<main class="min-h-screen w-full container px-6 my-7 md:h-screen md:my-0">
-  <slot />
-</main>
+<slot />
+
+<MetaTags titleTemplate="Brendan Betts - %s" />
 
 <style lang="postcss">
   :global(html) {

@@ -1,0 +1,105 @@
+{
+  "skills": [
+    {
+      "label": "10+ years experience",
+      "items": [
+        "JavaScript", "HTML", "CSS", "SQL", "Git"
+      ]
+    },
+    {
+      "label": "5-10 years experience",
+      "items": [
+        "React", "Jest", "Wordpress", "Contentful", "Redux"
+      ]
+    },
+    {
+      "label": "3-5 years experience",
+      "items": [
+        "TypeScript", "TailwindCSS", "Sanity.io"
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Senior Front End Developer",
+      "company": {
+        "name": "POWER SHIFTER Digital"
+      },
+      "startDate": "June 2021",
+      "endDate": "April 2024",
+      "description": [
+        "Spearheaded the gathering of technical and functional requirements as the lead architect for a Marine Domain Awareness client. Activities encompassed conducting stakeholder interviews, crafting comprehensive technical architecture designs, and authoring project documentation.",
+        "Guided the creation of the new content model and directed the Front End development for a significant Insurance client in the process of migrating their legacy website to Contentful, Next.js, and TypeScript. Implemented complementary technologies including GraphQL, Storybook, and TailwindCSS to ensure a cohesive and efficient transition.",
+        "Orchestrated the architectural design and helmed the development efforts for the Front End of an in-house e-commerce web application. Leveraged TypeScript and Next.JS to ensure seamless user experiences and enhanced functionality.",
+        "Pioneered the integration of TypeScript as the agency's primary programming language, catalyzing improved code quality and developer efficiency across projects.",
+        "Played a pivotal role in agency growth initiatives by engaging in various aspects of business development. Activities included meticulous project scoping, accurate timeline estimations, addressing technical inquiries, and conducting insightful stakeholder interviews."
+      ]
+    },
+    {
+      "title": "Intermediate Front End Developer",
+      "company": {
+        "name": "POWER SHIFTER Digital"
+      },
+      "startDate": "February 2017",
+      "endDate": "June 2021",
+      "description": [
+        "Provided direction and oversaw the architectural design and development efforts for an industry recognized web application for UX. Leveraged React and JavaScript to ensure optimal Front End functionality and user experience.",
+        "Championed the adoption of React as the agency's leading Front End framework, driving improved development practices and delivering innovative solutions to clients.",
+        "Provided guidance and support in the onboarding process for new team members across diverse projects, fostering a collaborative and knowledgeable work environment.",
+        "Directed the interview process for prospective candidates, ensuring alignment with team dynamics and technical requirements to secure top talent for the agency.",
+        "Organized and facilitated informative \"Lunch and Learns\" sessions on a range of React topics, catering to both technical and non-technical team members to foster continuous learning and skill development."
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": {
+        "name": "ICS Creative Agency"
+      },
+      "startDate": "February 2015",
+      "endDate": "January 2017",
+      "description": [
+        "Developed bespoke Wordpress Themes tailored to clients' needs, collaborating closely with Project Managers to incorporate client feedback and providing input into graphic design elements and oversaw the management and configuration of vhosts for those installations, ensuring optimal performance and reliability.",
+        "Developed and delivered various creative media assets, including email templates, applications, and videos, to clients, meeting their diverse communication needs.",
+        "Conceptualized and developed a Flask-based application tailored for a Driving School client, encompassing database design, implementation of data retrieval logic, and modular development principles."
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "company": {
+        "name": "Salesforce Marketing Cloud"
+      },
+      "startDate": "October 2014",
+      "endDate": "October 2013",
+      "description": [
+        "Acted as scrum master for Data Integrity team and Continued to contribute to the resolution of numerous bug fixes.",
+        "Assisted in validation of production deploys for multiple services.",
+        "Implemented an SFTP Client to transfer Zip files and for Log Archiving for across multiple services and servers.",
+        "Wrote and delivered a presentation about Git basics on the command line to colleagues.",
+        "Contributed to the design and implementation of an internal portal which interacts with Data Acquisition services using Java (Spring Framework), SQL, HTML, JavaScript and CSS. This internal portal was implemented to aid tier 3 support in their role."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "schoolName": "NBCC (New Brunswick Community College)",
+      "startDate": "2010",
+      "endDate": "2013",
+      "program": "Information Technology: Programmer - Analyst",
+      "description": "Diploma"
+    }
+  ],
+  "volunteering": [
+    {
+      "name": "The University of British Columbia",
+      "position": "Technical Mentor - BizHacks Hackathon 2019",
+      "description": "Provided Front End technical support to students partaking in the hackathon. This included, but was not limited to, help with styling, architecting code and features, and general troubleshooting with various front end items.",
+      "date": "Feb 2019"
+    },
+    {
+      "name": "Canada Learning Code",
+      "position": "Mentor",
+      "description": "I volunteered to be a technical mentor for a HTML, CSS, and JavaScript class for a Ladies Learning Code event in Vancouver. This included supporting the presenter with the material, but also being paired with a student for 1-1 mentorship and help.",
+      "date": "June 2018"
+    }
+  ]
+}
