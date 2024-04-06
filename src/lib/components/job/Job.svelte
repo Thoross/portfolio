@@ -8,7 +8,7 @@
 <Card>
   <div class="mb-4 print:mb-0">
     <h4 class="italic print:text-sm">{job.company.name}</h4>
-    <div class="flex flex-col justify-between md:flex-row">
+    <div class="flex flex-col justify-between md:flex-row print:flex-row">
       <h4 class="font-bold md:text-xl print:text-sm print:text-primary">{job.title}</h4>
       <div class="flex gap-x-2">
         <p class="font-medium print:text-sm">{job.startDate}</p>
