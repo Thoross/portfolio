@@ -2,21 +2,7 @@
   import { MetaTags } from 'svelte-meta-tags'
   import { fly, fade } from 'svelte/transition'
   import { backIn } from 'svelte/easing'
-
-  const metaProps = {
-    url: 'https://bbetts.dev',
-    title: 'Brendan Betts',
-    description:
-      "Hi, I'm Brendan. I'm a Front End developer from Vancouver, BC building elegant code solutions and award winning websites.",
-    images: [
-      {
-        url: 'https://bbetts.dev/headshot.png',
-        width: 432,
-        height: 432,
-        alt: 'Brendan Betts'
-      }
-    ]
-  }
+  import metaProps from '$lib/constants/meta.json'
 
   let animate = false
   setInterval(() => {
@@ -47,12 +33,12 @@
       <div in:fade={{ duration: 400, delay: 300 }} class="text-center">
         <p class="mb-5 text-2xl">
           I'm a Senior Software Developer from Vancouver, BC building elegant code solutions, award
-          winning websites, scalable systems.
+          winning websites, and scalable systems.
         </p>
         <p class="text-2xl">
-          Senior developer with 10+ years building web apps across the full stack. I love finding
-          the sweet spot between what a business needs and what's actually fun to build — and
-          helping the developers around me do the same
+          I have 10+ years experience building web apps across the full stack. I love finding the
+          sweet spot between what a business needs and what's actually fun to build while helping
+          the developers around me do the same
         </p>
       </div>
       <div

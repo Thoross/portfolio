@@ -5,21 +5,7 @@
   import Volunteer from '$lib/components/volunteer/Volunteer.svelte'
   import resume from '$lib/constants/job-data.json'
   import { MetaTags } from 'svelte-meta-tags'
-
-  const metaProps = {
-    url: 'https://bbetts.dev',
-    title: 'Resume - Brendan Betts',
-    description:
-      "Hi, I'm Brendan. I'm a Front End developer from Vancouver, BC building elegant code solutions and award winning websites.",
-    images: [
-      {
-        url: 'https://bbetts.dev/bbetts_6x6.jpg',
-        width: 432,
-        height: 432,
-        alt: 'Brendan Betts'
-      }
-    ]
-  }
+  import metaProps from '$lib/constants/meta.json'
 </script>
 
 <MetaTags
@@ -37,7 +23,7 @@
 <main
   class="container my-7 min-h-screen w-full px-6 pb-10 text-white md:my-0 lg:h-full print:my-0 print:max-w-full print:text-black"
 >
-  <header class="my-10 print:mb-2 print:mt-0 print:border-b print:border-secondary print:pb-4">
+  <header class="print:border-secondary my-10 print:mt-0 print:mb-2 print:border-b print:pb-4">
     <div class="mb-10 print:hidden">
       <a href="/" class="group flex items-center gap-2 font-sans font-bold"
         ><span class="icon-[bi--arrow-left] transition-all group-hover:-translate-x-2"></span><span
@@ -46,7 +32,7 @@
       >
     </div>
     <h1
-      class="text-left font-sigmar text-4xl print:text-left print:font-sans print:text-2xl print:font-extrabold print:text-primary"
+      class="font-sigmar print:text-primary text-left text-4xl print:text-left print:font-sans print:text-2xl print:font-extrabold"
     >
       Brendan Betts
     </h1>
@@ -58,21 +44,21 @@
       <span class="hidden md:block">-</span>
       <a
         href="mailto:bbetts9490@gmail.com"
-        class="underline underline-offset-2 transition-all hover:decoration-2 hover:underline-offset-4 print:decoration-primary print:decoration-1"
+        class="print:decoration-primary underline underline-offset-2 transition-all hover:decoration-2 hover:underline-offset-4 print:decoration-1"
       >
         Email
       </a>
       <span class="hidden md:block">-</span>
       <a
         href="tel:604-445-2142"
-        class="underline underline-offset-2 transition-all hover:decoration-2 hover:underline-offset-4 print:decoration-primary print:decoration-1"
+        class="print:decoration-primary underline underline-offset-2 transition-all hover:decoration-2 hover:underline-offset-4 print:decoration-1"
       >
         604-445-2142
       </a>
       <span class="hidden md:block">-</span>
       <a
         href="https://github.com/thoross"
-        class="underline underline-offset-2 transition-all hover:decoration-2 hover:underline-offset-4 print:decoration-primary print:decoration-1"
+        class="print:decoration-primary underline underline-offset-2 transition-all hover:decoration-2 hover:underline-offset-4 print:decoration-1"
         >Github Portfolio</a
       >
     </div>
