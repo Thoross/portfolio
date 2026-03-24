@@ -50,7 +50,7 @@
     >
       Brendan Betts
     </h1>
-    <h2 class="mb-2 text-3xl font-medium print:mb-0 print:text-xl">Senior Frontend Developer</h2>
+    <h2 class="mb-2 text-3xl font-medium print:mb-0 print:text-xl">Senior Software Developer</h2>
     <div
       class="flex flex-wrap justify-center gap-2 md:flex-row md:justify-start print:justify-start"
     >
@@ -76,6 +76,17 @@
         >Github Portfolio</a
       >
     </div>
+    <div class="pt-4">
+      <p class="text-lg print:text-sm">
+        Senior Software Developer with 10+ years of experience building and shipping production web
+        applications across the full stack. Known for translating complex business requirements into
+        clean, scalable technical solutions — and for bringing teams along for the ride through
+        mentorship, code reviews, and architectural guidance. Equally comfortable defining a content
+        model with a stakeholder, architecting a component library, or diving deep into a gnarly
+        front-end problem. Thrives in cross-functional environments where engineering and product
+        thinking need to work hand in hand.
+      </p>
+    </div>
   </header>
   <div class="my-8 print:my-2">
     <h3 class="mb-4 text-center text-3xl font-bold print:mb-0 print:text-xl">Skills</h3>
@@ -84,9 +95,11 @@
     >
       {#each resume.skills as skill}
         <ul>
-          <li class="flex items-center gap-1 text-center md:flex-col print:flex-col">
-            <span class="text-lg font-bold print:text-sm">{skill.label}:</span>
-            <span class="print:text-[10px]">{skill.items.join(', ')}</span>
+          <li
+            class="flex items-center justify-between gap-1 text-center md:flex-col print:flex-col"
+          >
+            <span class="text-left text-lg font-bold print:text-sm">{skill.label}:</span>
+            <span class="text-right print:text-[10px]">{skill.items.join(', ')}</span>
           </li>
         </ul>
       {/each}

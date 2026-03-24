@@ -1,25 +1,67 @@
 {
   "skills": [
     {
-      "label": "10+ years experience",
+      "label": "Frontend",
       "items": [
-        "JavaScript", "HTML", "CSS", "SQL", "Git"
+        "React",
+        "Svelte",
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Figma"
       ]
     },
     {
-      "label": "5-10 years experience",
+      "label": "Backend & Infrastructure",
       "items": [
-        "React", "Jest", "Wordpress", "Contentful", "Redux"
+        "Node.js",
+        "GCP",
+        "Docker",
+        "API Development"
       ]
     },
     {
-      "label": "3-5 years experience",
+      "label": "State & Data",
       "items": [
-        "TypeScript", "TailwindCSS", "Sanity.io"
+        "Redux",
+        "GraphQL",
+        "SQL"
+      ]
+    },
+    {
+      "label": "CMS & Content",
+      "items": [
+        "Contentful",
+        "Sanity.io",
+        "WordPress"
+      ]
+    },
+    {
+      "label": "Testing & Tooling",
+      "items": [
+        "Jest",
+        "Vitest",
+        "Storybook",
+        "Git"
       ]
     }
   ],
   "jobs": [
+    {
+      "title": "Senior Software Engineer, Web",
+      "company": {
+        "name": "Viral Nation"
+      },
+      "startDate": "June 2024",
+      "endDate": "Present",
+      "description": [
+        "Led a cross-functional development team in delivering full-stack features across 4 production applications and 2 APIs, coordinating across front-end and back-end layers to ensure consistent, high-quality releases at scale.",
+        "Architected and delivered a reusable, design consistent Svelte 5 Component Library adopted across 4 applications, establishing standardized UI patterns that improved team velocity, reduced duplication, and elevated code maintainability.",
+        "Provided ongoing mentorship to junior and intermediate developers through code reviews, pair programming, and technical guidance, helping team members grow across the full stack.",
+        "Authored comprehensive full-stack architectural designs and technical documentation for complex features spanning 4 applications and 2 APIs, driving alignment across stakeholders and reducing ambiguity throughout the development lifecycle.",
+        "Partnered with both technical and non-technical stakeholders to align on feature design and requirements, consistently advocating for user-centered outcomes and bridging the gap between business needs and practical engineering solutions."
+      ]
+    },
     {
       "title": "Senior Front End Developer",
       "company": {
@@ -58,9 +100,9 @@
       "startDate": "February 2015",
       "endDate": "January 2017",
       "description": [
-        "Developed bespoke Wordpress Themes tailored to clients' needs, collaborating closely with Project Managers to incorporate client feedback and providing input into graphic design elements and oversaw the management and configuration of vhosts for those installations, ensuring optimal performance and reliability.",
-        "Developed and delivered various creative media assets, including email templates, applications, and videos, to clients, meeting their diverse communication needs.",
-        "Conceptualized and developed a Flask-based application tailored for a Driving School client, encompassing database design, implementation of data retrieval logic, and modular development principles."
+        "Developed bespoke Wordpress Themes tailored to clients' needs, collaborating closely with Project Managers to incorporate client feedback, providing input into graphic design elements, and oversaw the management and configuration of vhosts for those installations, ensuring optimal performance and reliability.",
+        "Developed and delivered various creative media assets, including email templates, applications, and videos to clients, meeting their diverse communication needs.",
+        "Conceptualized and developed a full-stack application tailored for a Driving School client, encompassing database design, API design, and frontend development."
       ]
     },
     {
@@ -72,10 +114,7 @@
       "endDate": "October 2014",
       "description": [
         "Acted as scrum master for Data Integrity team and Continued to contribute to the resolution of numerous bug fixes.",
-        "Assisted in validation of production deploys for multiple services.",
-        "Implemented an SFTP Client to transfer Zip files and for Log Archiving for across multiple services and servers.",
-        "Wrote and delivered a presentation about Git basics on the command line to colleagues.",
-        "Contributed to the design and implementation of an internal portal which interacts with Data Acquisition services using Java (Spring Framework), SQL, HTML, JavaScript and CSS. This internal portal was implemented to aid tier 3 support in their role."
+        "Contributed to the design and implementation of an internal portal to aid tier 3 support in their role."
       ]
     }
   ],

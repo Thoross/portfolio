@@ -46,11 +46,13 @@
       </div>
       <div in:fade={{ duration: 400, delay: 300 }} class="text-center">
         <p class="mb-5 text-2xl">
-          I'm a Front End developer from Vancouver, BC building elegant code solutions and award
-          winning websites.
+          I'm a Senior Software Developer from Vancouver, BC building elegant code solutions, award
+          winning websites, scalable systems.
         </p>
         <p class="text-2xl">
-          I specialize in React, TypeScript, and modern CMSs like Contentful and Sanity.
+          Senior developer with 10+ years building web apps across the full stack. I love finding
+          the sweet spot between what a business needs and what's actually fun to build — and
+          helping the developers around me do the same
         </p>
       </div>
       <div
