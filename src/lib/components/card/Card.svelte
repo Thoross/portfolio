@@ -1,5 +1,11 @@
+<script lang="ts">
+  import type { Snippet } from 'svelte'
+
+  let { children }: { children: Snippet } = $props()
+</script>
+
 <div class="card-bg p-4 print:p-0">
-  <slot />
+  {@render children()}
 </div>
 
 <style>

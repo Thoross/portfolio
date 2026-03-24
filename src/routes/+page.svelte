@@ -10,7 +10,7 @@
       "Hi, I'm Brendan. I'm a Front End developer from Vancouver, BC building elegant code solutions and award winning websites.",
     images: [
       {
-        url: 'https://bbetts.dev/bbetts_6x6.jpg',
+        url: 'https://bbetts.dev/headshot.png',
         width: 432,
         height: 432,
         alt: 'Brendan Betts'
@@ -31,11 +31,11 @@
     <div class="grid h-full w-full place-content-center text-white">
       <div
         in:fly={{ y: 100, duration: 500, easing: backIn }}
-        class="mx-auto mb-5 mt-0 w-max rounded-full bg-gradient-to-br from-[#833ab4] to-[#1dcaff] p-1 drop-shadow-lg"
+        class="mx-auto mt-0 mb-5 w-max rounded-full bg-gradient-to-br from-[#833ab4] to-[#1dcaff] p-1 drop-shadow-lg"
       >
         <img
           class="mx-auto w-52 place-content-center rounded-full drop-shadow-xl"
-          src="$lib/bbetts_6x6.jpg"
+          src="$lib/headshot.png"
           alt="Brendan Betts"
         />
       </div>
@@ -65,7 +65,8 @@
           rel="noreferrer"
           class="group flex flex-col items-center"
         >
-          <span class="icon-[bxl--github] text-5xl transition-all group-hover:-translate-y-2" />
+          <span class="icon-[bxl--github] text-5xl transition-all group-hover:-translate-y-2"
+          ></span>
           <span class="text-lg">Github</span>
         </a>
         <a
@@ -76,7 +77,7 @@
         >
           <span
             class="icon-[bxl--linkedin-square] text-5xl transition-all group-hover:-translate-y-2"
-          />
+          ></span>
           <span class="text-lg">LinkedIn</span>
         </a>
         <a href="/resume" class="group flex flex-col items-center">

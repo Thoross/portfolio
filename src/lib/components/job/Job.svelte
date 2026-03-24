@@ -1,10 +1,10 @@
 <script lang="ts">
   import Card from '../card/Card.svelte'
   import type { Job } from './Job'
-  export let job: Job
+
+  let { job }: { job: Job } = $props()
 </script>
 
-<!-- <div> -->
 <Card>
   <div class="mb-4 print:mb-0">
     <h4 class="italic print:text-sm">{job.company.name}</h4>

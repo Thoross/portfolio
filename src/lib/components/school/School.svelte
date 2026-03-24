@@ -1,7 +1,8 @@
 <script lang="ts">
   import Card from '../card/Card.svelte'
   import type { School } from './School'
-  export let school: School
+
+  let { school }: { school: School } = $props()
 </script>
 
 <Card>
