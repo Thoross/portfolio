@@ -42,7 +42,8 @@
         "Jest",
         "Vitest",
         "Storybook",
-        "Git"
+        "Git",
+        "Claude"
       ]
     }
   ],
